@@ -1,6 +1,6 @@
 # E-Commerce-Back-End
 
-screenshot
+![Image of insomnia running the routes](./assets/images/e-commerce-back-end.png)
 
 ## Description 
 
@@ -35,3 +35,5 @@ screenshot
 - Using [Include](https://gist.github.com/zcaceres/83b554ee08726a734088d90d455bc566) for queries.
 
 ## Demo Video
+
+- You can watch the demo video [here](https://app.screencastify.com/v3/watch/PxCX96ONMPTdpbyl2gL7)
