@@ -52,8 +52,14 @@ router.post('/', async (req, res) => {
           tag_id: newTag.id,
         };
       });
-      const productTagIds = await ProductTag.bulkCreate(productTagIdArr);
-      return res.json(productTagIds);
+      await ProductTag.bulkCreate(productTagIdArr);
+
+      const newTagData = await Tag.findByPk(newTag.id, {
+        include: {model: Product}
+      });
+
+      return res.json(newTagData);
+      // return res.json(productTagIds);
     }
     // if no products are assigned to the new tag then just respond
     res.json(newTag);
